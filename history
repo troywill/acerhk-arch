@@ -1,0 +1,5 @@
+modprobe acerhk force_series=290 usedritek=1 verbose=1
+echo 1 > /proc/driver/acerhk/wirelessled 
+rmmod ipw2200
+modprobe ipw2200 led=1 
+iwlist scanning
